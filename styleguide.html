@@ -23,10 +23,16 @@
 <body>
   <!-- navigation bar for switching between different pages, i.e. styleguide, product listing pages -->
   <header>
-    <a href="home.html"><img src="img/logo.png" alt="portfolio logo" class="logo_img"></a>
+    <!-- <a href="home.html"><img src="img/logo.png" alt="portfolio logo" class="logo_img"></a> -->
   </header>
 
   <nav class="navContainer">
+
+    <nav class="nav-flex-box nav-bar">
+      <a class="button-nav" href="home.html">Work</a>
+      <a class="button-nav" href="about.html">About</a>
+      <a class="button-nav" href="styleguide.html">Style</a>
+    </nav>
 
   </nav>
 
@@ -133,97 +139,139 @@
             <h3 class="header-three">Rendered Element:</h3>
             <p class="paragraph-text">Gingerbread gummies sesame snaps caramels tootsie roll powder tart danish cookie. Jujubes tootsie roll donut macaroon liquorice tart pie. Cake muffin fruitcake tiramisu cupcake pudding jelly beans halvah. Pie pastry biscuit sweet roll pie. Caramels
               cheesecake carrot cake cotton candy tart lollipop. Powder muffin gummies jelly beans. Lemon drops lollipop biscuit bonbon.</p>
+            </div>
+            <div class="flex-half">
+              <h3 class="header-three">CSS Selector:</h3>
+              <p>.paragraph-bodytext</p>
+              <h3 class="header-three">Sample Code:</h3>
+              <code>&lt;p class="paragraph-text"&gt;This is a styled paragraph&lt;/p&gt;</code>
+            </div>
           </div>
-          <div class="flex-half">
-            <h3 class="header-three">CSS Selector:</h3>
-            <p>.paragraph-bodytext</p>
-            <h3 class="header-three">Sample Code:</h3>
-            <code>&lt;p class="paragraph-text"&gt;This is a styled paragraph&lt;/p&gt;</code>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="bullet-list">
-        <h2 class="header-stylize">BULLETED LIST</h2>
+        <section id="bullet-list">
+          <h2 class="header-stylize">BULLETED LIST</h2>
+          <div class="flex">
+            <div class="flex-half">
+              <h3 class="header-three">Rendered Element:</h3>
+              <ul class="list-bulleted">
+                <li>This is a bulleted list.</li>
+                <li>Each bulleted line is a list item.</li>
+                <li>I love you.</li>
+              </ul>
+            </div>
+            <div class="flex-half">
+              <h3 class="header-three">CSS Selector:</h3>
+              <p>.list-bulleted</p>
+              <h3 class="header-three">Sample Code:</h3>
+              <code>&lt;ul class="list-bulleted"&gt;&lt;li&gt;This is a list item inside an unordered list.&lt;/li&gt;&lt;/ul&gt;</code>
+            </div>
+          </div>
+        </section>
+
+        <section id="numbered-list">
+          <h2 class="header-stylize">NUMBERED LIST</h2>
+          <div class="flex">
+            <div class="flex-half">
+              <h3 class="header-three">Rendered Element:</h3>
+              <ol class="list-numbered">
+                <li>Two, Three, Four.</li>
+                <li>Tell me that you love me more.</li>
+                <li>Sleepless long nights</li>
+                <li>That is what my youth is for</li>
+              </ol>
+            </div>
+            <div class="flex-half">
+              <h3 class="header-three">CSS Selector:</h3>
+              <p>.list-numbered</p>
+              <h3 class="header-three">Sample Code:</h3>
+              <code>&lt;ol class="list-numbered"&gt;&lt;li&gt;This is a list item inside an unordered list.&lt;/li&gt;&lt;/ol&gt;</code>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- end of text-style-->
+
+      <section id="analysis">
+        <h2 class="header-stylize">Project analysis- moodboard experimental video<</h2>
         <div class="flex">
           <div class="flex-half">
-            <h3 class="header-three">Rendered Element:</h3>
-            <ul class="list-bulleted">
-              <li>This is a bulleted list.</li>
-              <li>Each bulleted line is a list item.</li>
-              <li>I love you.</li>
-            </ul>
-          </div>
-          <div class="flex-half">
-            <h3 class="header-three">CSS Selector:</h3>
-            <p>.list-bulleted</p>
-            <h3 class="header-three">Sample Code:</h3>
-            <code>&lt;ul class="list-bulleted"&gt;&lt;li&gt;This is a list item inside an unordered list.&lt;/li&gt;&lt;/ul&gt;</code>
-          </div>
-        </div>
-      </section>
+            <p>Role- Ideation, storyboarding, location scheduling, video editing, special effects, music remixing<p>
+              <p>Tools
+                ​
+                After Effects 2017, Adobe Illustrator 2017, Canon T3i DSLRs, video sliver tripod (Manfrotto 128)
+                ​
+                Location
+                ​
+                Green room at Simon Fraser University Surrey Campus</p>
+                <p>Description
+                  ​
+                  Haziness is a visual effect video that includes a sense of "a spirit of haziness". Since I always have a hazy notion towards things when I am lack of sleep and stress during the final week of the semester. I want to share this experience and transform my mind activity into visible moving imagery.
+                  ​
+                  The video focuses on the character movements, such as jumping, dancing and waving hands in the air to represent the emotion of having a hazy mind. The technique of using funky, high saturated, and symmetry styles (Kaleida effect in After effect) through the whole video, instead of a smoky environment, makes the video unique and creative.
+                </p>
+              </div>
+              <div class="flex-half">
+                <img src="img/moodboard.png"  alt="portfolio moodboard" class="moodboard_img">
+              </div>
+            </div>
+          </section>
+          <section id="analysis">
+            <h2 class="header-stylize">Project analysis- process of experimental video</h2>
+            <div class="flex">
+              <p>
+                Process Analysis of Final Video:
 
-      <section id="numbered-list">
-        <h2 class="header-stylize">NUMBERED LIST</h2>
-        <div class="flex">
-          <div class="flex-half">
-            <h3 class="header-three">Rendered Element:</h3>
-            <ol class="list-numbered">
-              <li>Two, Three, Four.</li>
-              <li>Tell me that you love me more.</li>
-              <li>Sleepless long nights</li>
-              <li>That is what my youth is for</li>
-            </ol>
-          </div>
-          <div class="flex-half">
-            <h3 class="header-three">CSS Selector:</h3>
-            <p>.list-numbered</p>
-            <h3 class="header-three">Sample Code:</h3>
-            <code>&lt;ol class="list-numbered"&gt;&lt;li&gt;This is a list item inside an unordered list.&lt;/li&gt;&lt;/ol&gt;</code>
-          </div>
-        </div>
-      </section>
-    </section>
-    <!-- end of text-style-->
+                Glitch effect -> Spilt effect -> Transition to blue background -> Kaleida effects
+                ​
+                For the jumping movement,  I had zoom in the shots to focus on the legs and use the scale tool to mirror the character(me). Then, for the kaleida effects, I applied the flower, Can Maes, Wheel, Flippers, Unfold, and Dia cross effect with some a few rotations in order to establish the hazy mood. </p>
+                <img src="img/process.png"  alt="portfolio process" class="process_img">
+              </div>
+            </section>
+            <section id="analysis">
+              <h2 class="header-stylize">Project analysis- VR glasses</h2>
+              <div class="flex">
+                <div class="flex-half">
+                  <p>Role- Ideation, poster design<p>
+                    <p>VR HEADSET DESIGN
+                      A VR headset made of wood and metal, designed to deliver a better experience of viewing the showroom at home.</p>
+                      <ul>
+                        <li>  Summary of Horizon VR glasses</li>
+                        <li>Persona</li>
+                        <li>Context</li>
+                        <li>Interaction</li>
+                        <li>Materiality</li>
+                        <li>3D model render</li>
+                        <li>Final physical model</li>
+                        <li>Product views</li>
+                        <li>Product dimensions</li>
+                        <li>Fabrication</li>
+                        <li>Technology</li>
+                        <li>Form and process</li>
+                      </ul>
+                    </div>
+                    <div class="flex-half">
+                      <img src="img/cork.png"  alt="portfolio corkposter" class="moodboard_img">
+                    </div>
+                  </div>
 
-    <section id="analysis">
-      <h2 class="header-stylize">Project analysis- moodboard experimental video<</h2>
-      <div class="flex">
-        <div class="flex-half">
-          <p>Role- Ideation, storyboarding, location scheduling, video editing, special effects, music remixing<p>
-            <p>Tools
-​
-After Effects 2017, Adobe Illustrator 2017, Canon T3i DSLRs, video sliver tripod (Manfrotto 128)
-​
-Location
-​
-Green room at Simon Fraser University Surrey Campus</p>
-<p>Description
-​
-Haziness is a visual effect video that includes a sense of "a spirit of haziness". Since I always have a hazy notion towards things when I am lack of sleep and stress during the final week of the semester. I want to share this experience and transform my mind activity into visible moving imagery.
-​
-The video focuses on the character movements, such as jumping, dancing and waving hands in the air to represent the emotion of having a hazy mind. The technique of using funky, high saturated, and symmetry styles (Kaleida effect in After effect) through the whole video, instead of a smoky environment, makes the video unique and creative.
-</p>
-        </div>
-        <div class="flex-half">
-        <img src="img/moodboard.png"  alt="portfolio moodboard" class="moodboard_img">
-        </div>
-      </div>
-    </section>
-    <section id="analysis">
-      <h2 class="header-stylize">Project analysis- process of experimental video</h2>
-      <div class="flex">
-<p>
-Process Analysis of Final Video:
+                  <div class="flex">
+                    <div class="flex-half">
+                      <img src="img/sketch.png"  alt="portfolio sketch" class="half_img">
+                    </div>
 
-Glitch effect -> Spilt effect -> Transition to blue background -> Kaleida effects
-​
-For the jumping movement,  I had zoom in the shots to focus on the legs and use the scale tool to mirror the character(me). Then, for the kaleida effects, I applied the flower, Can Maes, Wheel, Flippers, Unfold, and Dia cross effect with some a few rotations in order to establish the hazy mood. </p>
-        <img src="img/process.png"  alt="portfolio process" class="process_img">
-      </div>
-    </section>
-  </section>
-  </main>
+                    <div class="flex-half">
+                      <img src="img/poster.png"  alt="portfolio poster" class="half_img">
+                    </div>
+                  </div>
 
-</body>
-</html>
+                </section>
+
+              </section>
+            </main>
+            <footer class="main-footer">
+              <p>&lt; Sherry Liao (2019)</p>
+              <a class="text-link" href="citations.html">Citations</a>
+          </footer>
+          </body>
+          </html>
