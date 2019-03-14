@@ -1,4 +1,17 @@
-/* <!-- Project one: styleguide | Fan-Hsuan(Sherry) Liao--> */
+/* <!-- Project three: styleguide | Fan-Hsuan(Sherry) Liao--> */
+
+.container{
+  width:100vh;
+  height:90vh;
+}
+.main-header{
+  margin-top:30vh;
+  text-align: center;
+}
+.bodytext{
+  text-align: center;
+
+}
 
 * {
   box-sizing: border-box;
@@ -296,7 +309,7 @@ SITE COLOUR PALETTE
 /* link */
 .link-text {
   /* dark green */
-  color:white;
+  color:black;
   /* double lines */
   text-decoration-style:double;
 }

@@ -1,0 +1,15 @@
+.container{
+  width:100vh;
+  height:50vh;
+}
+.main-header{
+  margin-top:30vh;
+  text-align: center;
+}
+.bodytext{
+  text-align: center;
+
+}
+body{
+  maring:0;
+}
