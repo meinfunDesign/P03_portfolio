@@ -1,6 +1,12 @@
+body{
+  margin-left: 20%;
+
+}
 .container{
   width:100vh;
   height:50vh;
+  margin-left: 5%;
+
 }
 .main-header{
   margin-top:30vh;
