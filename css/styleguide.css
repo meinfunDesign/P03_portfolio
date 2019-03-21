@@ -1,17 +1,4 @@
-/* <!-- Project three: styleguide | Fan-Hsuan(Sherry) Liao--> */
-
-/* .container{
-  width:100vh;
-  height:90vh;
-}
-.main-header{
-  margin-top:30vh;
-  text-align: center;
-}
-.bodytext{
-  text-align: center;
-
-} */
+/* <!-- Project three: Portfolio_styleguide | Fan-Hsuan(Sherry) Liao--> */
 
 * {
   box-sizing: border-box;
@@ -24,7 +11,7 @@ body {
   margin-right: 15%;
   /* light grey */
   /* background-color:#f5f5f5; */
-  background-color:white;
+  /* background-color:white; */
   font-weight: lighter;
 }
 
@@ -309,7 +296,7 @@ SITE COLOUR PALETTE
 /* link */
 .link-text {
   /* dark green */
-  color:black;
+  color:red;
   /* double lines */
   text-decoration-style:double;
 }
