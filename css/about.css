@@ -1,0 +1,31 @@
+.left-side,
+.right-side {
+  width: 50%;
+}
+
+.left-side {
+  padding-right: 4rem; }
+
+
+  .page-wrapper section, #bio-wrapper section {
+    margin-top: 9rem; }
+    .page-wrapper section p, #bio-wrapper section p {
+      margin-top: 1rem; }
+
+.about_info{
+  margin-left: 15%;
+}
+
+.content-wrapper {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%; }
+
+.email-text{
+  font-size: 0.9rem;
+  color:red;
+}
+.profile{
+  width:300px;
+}
