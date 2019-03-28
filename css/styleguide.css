@@ -23,7 +23,7 @@ code {
   padding: 0.25em 0.5em;
   line-height: 1.7em;
   font-size: 1.1em;
-  color:#08302f;
+  color:pink;
 
 }
 a{
@@ -72,8 +72,8 @@ nav li {
   text-decoration: none;
 
   /* dark green */
-  border: 3px solid #59f1b0;
-  color: #59f1b0;
+  /* border: 3px solid #59f1b0; */
+  color: pink;
   background-color: white;
   transition: color 0.3s ease-in-out,
   border 0.3s ease-in-out;
@@ -82,20 +82,20 @@ nav li {
 
 /* Clear interaction point response for navigation button*/
 .button-nav:hover, .button-nav:active{
-  color: #85e582;
+  color: pink;
   /* light green */
   background-color: white;
-  border: 3px solid #85e582;
-  text-decoration: underline #85e582;
+  border: 3px solid pink;
+  text-decoration: dashed pink;
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 .button-nav:focus {
   color:white;
   /* light green */
-  border: 3px solid #85e582;
+  border: 3px solid pink;
   text-decoration: underline white;
   transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
-  background-color: #85e582;
+  background-color: pink;
 
 }
 /* interactive_elements */
@@ -103,7 +103,7 @@ nav li {
 .text_input,.button-radio{
   transition:border 0.8s;
   /* dark green */
-  border-color: #0e8044;
+  border-color: pink;
   font-family: "Office Code Pro", monospace;
   margin-top: 1em;
 }
@@ -111,20 +111,20 @@ nav li {
 /* Clear interaction point response for text input when it is hovered or focused */
 .text_input:hover,.button-radio:hover{
   /* light green  */
-  border: 3px solid #0e8044;
+  border: 3px solid pink;
 }
 .text_input:focus,.button-radio:focus{
   /* light grey  */
-  background-color: #f4ff81;
-  border: 3px solid #0e8044;
+  background-color: pink;
+  border: 3px solid pink;
 }
 
 
 /* submit, reset, purchase buttons (add to chart)*/
 .button-form-submit, .button-form-reset:focus, .button-purchase {
   /* white text in dark green background */
-  border: 3px solid #0e8044;
-  background-color:#0e8044;
+  border: 3px solid pink;
+  background-color:pink;
   color: white;
   /* margin-top: 5em; */
   min-width: 10em;
@@ -140,8 +140,8 @@ nav li {
 /* Clear interaction point response for submit, reset, purchase button*/
 .button-form-submit:hover,.button-purchase:hover,.button-form-reset:focus,
 .button-form-submit:active,.button-purchase:active {
-  border: 3px solid #85e582;
-  background-color:#85e582;
+  border: 3px solid pink;
+  background-color:pink;
   color: white;
   /* margin-top: 5em; */
   min-width: 10em;
@@ -151,10 +151,10 @@ nav li {
 }
 .button-form-reset{
   /* dark green */
-  border: 3px solid #0e8044;
+  border: 3px solid pink;
   min-width: 10em;
   background-color: white;
-  color: #0e8044;
+  color:pink;
 }
 .button-form-reset:hover,.button-form-reset:active{
   /* fresh_green green */
