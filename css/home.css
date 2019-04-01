@@ -246,6 +246,18 @@ width:100%;
   padding-right: 2rem;;
   background-color:white;
   border:2px solid pink;
+
+  /* width: 30%; */
+  float: left;
+  border-width: 1rem;
+  border-image: initial;
+  /* margin: 0px 0px 30px 3.33333%; */
+  /* padding: 10px; */
+}
+.project-box:hover{
+  border-color: pink;
+  border-style: dotted;
+
 }
 
 /* @media */

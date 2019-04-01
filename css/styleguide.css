@@ -19,7 +19,7 @@ body {
 code {
   /* highlight the code with background color */
   /* highligh green  */
-  background-color: #b9f6ca;
+  background-color: white;
   padding: 0.25em 0.5em;
   line-height: 1.7em;
   font-size: 1.1em;
@@ -53,51 +53,44 @@ nav ul {
 }
 
 nav li {
-  display: inline-block;
+  /* display: inline-block; */
   margin: 0;
   padding:0.4rem;
 
 }
 
 .button-nav {
-  font-family: "Office Code Pro", monospace;
-  font-weight: 700;
-  font-size: 1em;
-  min-width: 15em;
-  padding: 0.5em 0.75em;
-  display: inline-block;
-  letter-spacing: 0.0625rem;
   position: relative;
+  letter-spacing: 0.0625rem;
   text-align: center;
   text-decoration: none;
-
-  /* dark green */
-  /* border: 3px solid #59f1b0; */
+  font-size: 0.75rem;
   color: pink;
-  background-color: white;
-  transition: color 0.3s ease-in-out,
-  border 0.3s ease-in-out;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  text-transform: uppercase;
+}
+.button-nav:hover {
+  font-weight: 800;
+}
+.button-nav:hover:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -0.25rem;
+  border-bottom: 2px dashed pink;
+}
+.button-nav.active:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -0.25rem;
+  border-bottom: 2px dashed pink;
 }
 
-
-/* Clear interaction point response for navigation button*/
-.button-nav:hover, .button-nav:active{
-  color: pink;
-  /* light green */
-  background-color: white;
-  border: 3px solid pink;
-  text-decoration: dashed pink;
-  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
-}
-.button-nav:focus {
-  color:white;
-  /* light green */
-  border: 3px solid pink;
-  text-decoration: underline white;
-  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
-  background-color: pink;
-
-}
 /* interactive_elements */
 /* default text input + label */
 .text_input,.button-radio{
@@ -158,23 +151,23 @@ nav li {
 }
 .button-form-reset:hover,.button-form-reset:active{
   /* fresh_green green */
-  border: 3px solid #85e582;
+  border: 3px solid pink;
   min-width: 10em;
   background-color: white;
-  color: #85e582;
+  color: pink;
 }
 .button-form-submit:focus,.button-purchase:focus {
   /* white text in fresh green backgorund */
-  border: 3px solid #85e582;
+  border: 3px solid pink;
   background-color: white;
   min-width: 10em;
   /* darker green */
-  color: #85e582;
+  color: pink;
   transition: 0.25s ease-in-out, background-colo 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 .button-form-reset:focus{
-  border: 3px solid #85e582;
-  background-color: #85e582;
+  border: 3px solid pink;
+  background-color: pink;
   min-width: 10em;
   /* darker green */
   color: white;
@@ -186,16 +179,16 @@ nav li {
 .intro-header{
   font-size: 2.4em;
   font-weight: 800;
-  color: #85e582;
+  color: pink;
 }
 /* h1 style:Interactive elements, text elements,combined elements */
 .section-header {
   margin-top: 3em;
   padding-top: 1em;
-  border-top: 3px solid #08302f;
+  border-top: 3px solid pink;
 
   /* dark green */
-  color: #0e8044;
+  color: pink;
   font-size:1.9em;
   font-weight:700;
   font-style: italic;
@@ -219,7 +212,7 @@ SITE COLOUR PALETTE
 .header-stylize {
   font-family: Helvetica;
   /* dark green */
-  color: #59f1b0;
+  color: pink;
   font-size: 1.6em;
   font-weight: 600;
 }
@@ -251,11 +244,11 @@ SITE COLOUR PALETTE
 .header-one {
   font-size: 2.4em;
   font-weight: 800;
-  color: #85e582;
+  color: pink;
 }
 
 .header-two {
-  color: #0e8044;
+  color: grey;
   font-size:1.9em;
   font-weight:700;
   font-style: italic;
@@ -304,8 +297,7 @@ SITE COLOUR PALETTE
 .link-text:hover, .link-text:active, .link-text::after {
   /* dark green */
   color:#0e8044;
-  /* background-color: #b9f6ca; */
-  background-color: #eeff41;
+  /* background-color: pink; */
   padding-top:0.3rem;
   text-decoration-style:double;
 }
@@ -318,7 +310,7 @@ SITE COLOUR PALETTE
 .list-numbered li:hover, .bulleted_list li:hover {
   cursor: crosshair;
   /* highlight green */
-  background-color: #f4ff81;
+  background-color: pink;
 
 }
 
