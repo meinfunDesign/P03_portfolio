@@ -1,0 +1,107 @@
+.logo_img{
+  width:3rem;
+  height:auto;
+}
+
+/* navigation section */
+/* Styling for the navigation button */
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+  margin: 0;
+}
+
+.button-nav {
+  position: relative;
+  letter-spacing: 0.0625rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: pink;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  text-transform: uppercase;
+}
+.button-nav:hover {
+  font-weight: 800;
+}
+.button-nav:hover:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -0.25rem;
+  border-bottom: 2px dashed pink;
+}
+.button-nav.active:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -0.25rem;
+  border-bottom: 2px dashed pink;
+}
+
+/* Styling for main navigation */
+.main-nav {
+  position: relative;
+  font-size: 0.75rem;
+  padding-top: 4rem;
+}
+
+.main-nav ul {
+  position: relative;
+  margin-top: 2.7rem;
+}
+
+.main-nav li {
+  padding: 0 2.25rem 1.85rem 4rem;
+}
+
+
+
+
+
+/* bio in nav */
+.short-bio {
+  font-size: 0.75rem;
+  width:auto;
+  padding: 0 4rem;
+  bottom: 5rem;
+  margin-top:3rem;
+
+  color: black;
+}
+.short-bio span {
+  display: block;
+  width: 1rem;
+  height: 2rem;
+  font-family: Helvetica;
+}
+.copyright{
+  font-size: 0.75rem;
+}
+/* footer */
+.main-footer{
+
+  width:auto;
+  margin-top: 2rem;
+  padding: 0 4rem;
+  bottom: 5rem;
+
+}
+.link-text{
+  font-size: 0.6rem;
+  width:auto;
+  color: black;
+}
+
+.link-text:hover{
+  font-size: 0.6rem;
+  width:auto;
+  color: pink;
+}
