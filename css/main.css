@@ -79,15 +79,6 @@ INTERACTIVE ELEMENTS -------------------
 
 
 
-.nav-wrapper {
-  flex:1;
-  /* width:40vh;
-  min-height: 100vh;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  letter-spacing: 1px; */
-}
 
 
 
@@ -95,15 +86,14 @@ INTERACTIVE ELEMENTS -------------------
 .short-bio {
   font-size: 0.75rem;
   width: 19.375rem;
-  margin-top: 6rem;
+  margin-top: 5rem;
   padding: 0 4rem;
   bottom: 5rem;
   color: black; }
   .short-bio span {
     display: block;
     width: 1rem;
-    height: 2rem;
-  }
+    height: 2rem; }
 
 /* back button */
 li.back-desktop {
@@ -216,14 +206,17 @@ ul {
 COMBINED ELEMENTS -------------------
 
 /* Styling for product listing */
-#work_menu {
+#makeMeScrollable {
+  position: relative;
   flex:3;
   height: 100vh;
-   }
+  overflow: hidden; }
 
-#work_menu div {
+#makeMeScrollable div.scrollableArea {
   float: left;
-}
+  /* If you don't want the images in the scroller to be selectable, try the following
+    block of code. It's just a nice feature that prevent the images from
+    accidentally becoming selected/inverted when the user interacts with the scroller. */ }
 
 .project-panel-wrapper {
   width: 19.375rem;
@@ -440,26 +433,21 @@ COMBINED ELEMENTS -------------------
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: purple;
+    background-color: #213556;
     mix-blend-mode: lighten;
     -webkit-transition: all ease-in-out 0.5s;
     -o-transition: all ease-in-out 0.5s;
-    transition: all ease-in-out 0.5s;
-  }
+    transition: all ease-in-out 0.5s; }
   .project-panel-wrapper:hover .blue-img-filter {
-    background: black;
-  }
+    background: black; }
   .project-panel-wrapper:hover .project-number {
-    color: black;
-  }
+    color: black; }
   .project-panel-wrapper,
   .project-panel-wrapper:hover .category,
   .project-panel-wrapper:hover .project-name {
-    color: white;
-  }
+    color: white; }
   .project-panel-wrapper:hover .line {
-    border-top: 2px dashed white;
-  }
+    border-top: 2px dashed white; }
 
 /* Website grid */
 .grid-wrapper {
@@ -787,6 +775,12 @@ footer a {
   .content-wrapper {
     max-width: 100%;
     padding-right: 4rem; }
+    .nav-wrapper {
+      flex:1;
+    }
+    .short-bio,.logo_img,.home-footer{
+      visibility: visible;
+    }
   .flex-content-wrapper,
   .flex-img-wrapper,
   .left-side,
@@ -802,6 +796,12 @@ footer a {
   .flex{
     flex-direction: column;
   }
+.nav-wrapper{
+  max-width: 30px;
+}
+.short-bio,.logo_img, .home-footer{
+  visibility: hidden;
+}
      }
 
 @media (max-width: 475px) {
@@ -810,7 +810,7 @@ footer a {
   }
 
 @media (hover: none), (hover: on-demand) {
-  #SMA-panel .background-colo#2a2a90-panel,
+  #SMA-panel,
   #SMA-panel img,
   #VIA-panel img,
   #intl-coop-panel img,
