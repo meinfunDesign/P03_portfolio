@@ -37,12 +37,14 @@ section p {
 
 nav a:focus,
 nav a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 section code {
   background-color: #EEE;
   padding: 0.5em 0.75em;
-  display: block; }
+  display: block;
+}
 
 /*
 INTERACTIVE ELEMENTS -------------------
@@ -89,68 +91,6 @@ INTERACTIVE ELEMENTS -------------------
     display: block;
     width: 1rem;
     height: 2rem; }
-
-/* back button */
-li.back-desktop {
-  position: fixed;
-  bottom: 5rem;
-  padding-bottom: 0; }
-  li.back-desktop a {
-    color: transparent;
-    visibility: hidden;
-    -webkit-transition: color 0.5s, visibility 1s;
-    -o-transition: color 0.5s, visibility 1s;
-    transition: color 0.5s, visibility 1s; }
-    li.back-desktop a.show {
-      color: #2a2a90;
-      visibility: visible; }
-    li.back-desktop a.hide {
-      color: transparent;
-      visibility: hidden; }
-
-/* Styling for cta buttons */
-.cta-button {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  font-size: 0.875rem;
-  font-weight: 800;
-  letter-spacing: 0.0625rem;
-  padding: 0.5rem;
-  background: #2a2a90;
-  color: white; }
-  .cta-button:before {
-    content: '';
-    position: absolute;
-    border: #2a2a90 dashed 2px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    -webkit-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    transition-duration: 0.3s; }
-
-.cta-button:hover:before {
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px; }
-
-/*source: https://codepen.io/IanLunn/pen/hysxc*/
-/* Styling for text input field */
-.input-field-label {
-  display: block;
-  font-size: 0.875rem;
-  font-weight: 800;
-  margin-bottom: 0.25rem; }
-
-#text-input-field {
-  display: block;
-  font-size: 0.875rem;
-  padding: 0.15rem;
-  border: 1px solid;
-  color: #899da3; }
 
 /*
 TEXT ELEMENTS -------------------
@@ -263,7 +203,8 @@ COMBINED ELEMENTS -------------------
   padding: 0.25rem 0;
   letter-spacing: 2px;
   color:pink;
-  background: white; }
+  background: white;
+}
 
 .project-name {
   position: absolute;
@@ -278,7 +219,8 @@ COMBINED ELEMENTS -------------------
   left: 1.85rem;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
-  transform: rotate(90deg); }
+  transform: rotate(90deg);
+}
 
 .line {
   position: absolute;
@@ -290,7 +232,8 @@ COMBINED ELEMENTS -------------------
   left: 1.25rem;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg); }
+  transform: rotate(-90deg);
+}
   #tripping_friend_panel .line {
     top: 19.5rem; }
   #wndw_doc_panel .line {
@@ -390,11 +333,11 @@ COMBINED ELEMENTS -------------------
   margin-top: 1.75rem;
 }
 
-/* .flex-content-wrapper {
+.flex-content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-} */
+}
 /* div class for flex */
 .flex {
   display: flex;
@@ -477,18 +420,8 @@ display: block;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; }
-
-
-
-
-.divider {
-  display: block;
-  position: relative;
-  top: -1.9rem;
-  border: 1px dashed #213556;
-  margin: 1rem 6rem; }
-
+  height: 100%;
+}
 
 /* Citations styling */
 #citations p {
@@ -555,6 +488,7 @@ display: block;
   .page-wrapper{
     margin-left: 5%;
   }
+
   }
 
 @media (hover: none), (hover: on-demand) {
