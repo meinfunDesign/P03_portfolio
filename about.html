@@ -1,56 +1,68 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>Sherry Liao - Character Designer - Portfolio</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/mobile_nav.css">
-    <link href='https://fonts.googleapis.com/css?family=Pathway Gothic One' rel='stylesheet'>
-    </head>
-  <body>
-    <div class="grid-wrapper" id="bio-wrapper">
-      <div class="nav-wrapper">
-        <div class="logo">
-          <a href="home.html">
-            <img src="img/nav/logo.png" alt="Illustration logo for Sherry Liao" class="logo_img">
-        </a>
-        </div>
-        <button class="mobile-nav"><span></span><span></span><span></span></button>
-        <nav class="main-nav">
-          <ul>
-            <li> <a class="button-nav" href="home.html">Projects</a></li>
-            <li><a class="button-nav active" href="about.html">About</a></li>
-            <li><a class="button-nav" target="_blank" href="http://www.sarahtong.me/Portfolio%20Links/Resume-BandW-SarahTong.pdf">Resume</a></li>
-          </ul>
-        </nav>
-      </div>
-      <section>
-        <h1>
-           What's Up, everyone?, <br>I'm Sherry Liao.</h1>
-        <div class="content-wrapper flex-content-wrapper">
-          <div class="left-side">
-            <div class="img-wrapper" id="profile-picture"><img src="img/about/selfie.gif" alt="an illustration of myself with text surrounding"></div>
-          </div>
-          <div class="right-side">
-            <p>
-              I am a <span> character designer </span> with a focus on <span>character modelling, visual development, and storytelling strategy.</span> I am a huge hip-hop fan, MJ116 is my favourite hip-pop trio from Taipei, Taiwan. I desire to craft a memorable, compelling visual experience that evokes emotional responses.
-             </p>
-            <p>Currently, I am working to expand my animation skills from 2D to 3D in the execution phase of design by practicing the sculpt in Maya and art direction concept. With all of my work, I aim to bring optimism and strategic thinking to create meaningful and reflective digital projects. You can find out more about me and check out my work, or say hello!
-            </p>
-            <a class="in-text-link" href="mailto:sherry_liao@sfu.ca">sherry_liao@sfu.ca</a>
-            <a class="in-text-link" href="linkedin.com/in/fan-hsuan-liao">Linkedin</a>
-        </div>
-        </div>
-        <footer>
-          <div class="content-wrapper">
-            <p>2019&#169; Sherry Liao All right reserved.</p><a href="http://www.sfu.ca/~satong/P03:%20Portfolio/P03-Portfolio-Style-Guide/index.html">Style Guide</a>
-          </div>
-        </footer>
-      </section>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sherry Liao - Character Designer - Portfolio</title>
+  <link rel="icon" href="img/nav/logo.png">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+  <div class="grid-wrapper" id="bio-wrapper">
+    <div class="nav-wrapper">
+      <nav id="mySidenav" class="sidenav">
+        <a href="home.html"><img src="img/nav/logo.png" alt="portfolio logo" class="logo_img"></a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <a href="home.html"><img src="img/nav/logo.png" alt="portfolio logo" class="logo_img"></a>
     </div>
-    <script src="js/hamburger.js"></script>
+
+    <div class="page-wrapper">
+      <div class="flex">
+        <div class="left-side">
+          <div class="img-wrapper" id="profile-picture"><img src="img/about/selfie.gif" alt="an illustration of myself with text surrounding"></div>
+        </div>
+        <div class="right-side">
+          <section>
+            <h1>Hello!
+              <br> I'm Sherry Liao.</h1>
+              <p>
+                I am a <span> character designer </span> with a focus on <span>character modelling, visual development, and storytelling strategy.</span> I am a huge hip-hop fan, MJ116 is my favourite hip-pop trio from Taipei, Taiwan. I desire to craft a memorable, compelling visual experience that evokes emotional responses.
+              </p>
+              <p>Currently, I am working to expand my animation skills from 2D to 3D in the execution phase of design by practicing the sculpt in Maya and art direction concept. With all of my work, I aim to bring optimism and strategic thinking to create meaningful and reflective digital projects. You can find out more about me and check out my work, or say hello!
+              </p>
+              <a class="in-text-link" href="mailto:sherry_liao@sfu.ca">sherry_liao@sfu.ca</a>
+              <a class="in-text-link" href="linkedin.com/in/fan-hsuan-liao">Linkedin</a>
+            </section>
+          </div>
+        </div>
+        
+        <footer>
+          <!-- <div class="content-wrapper"> -->
+          <p>2019&#169; Sherry Liao All right reserved.</p><a href="http://www.sfu.ca/~satong/P03:%20Portfolio/P03-Portfolio-Style-Guide/index.html">Style Guide</a>
+          <!-- </div> -->
+        </footer>
+      </div>
+    </div>
+
+    <!-- hamburger menu -->
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    <!-- end of hamburger menu -->
     <script src="js/back-button.js"></script>
   </body>
-</html>
+  </html>

@@ -1,35 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <title>Sherry Liao - Character Designer - Portfolio</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/mobile_nav.css">
-  <link href='https://fonts.googleapis.com/css?family=Pathway Gothic One' rel='stylesheet'>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sherry Liao - Character Designer - Portfolio</title>
+    <link rel="icon" href="img/nav/logo.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css">
+  </head>
+  <body>
   <div class="grid-wrapper">
     <div class="nav-wrapper">
-      <div class="logo">
-        <a href="home.html">
-          <img src="img/nav/logo.png" alt="portfolio" class="logo_img">
-        </a>
-      </div>
-      <button class="mobile-nav"><span></span><span></span><span></span></button>
-      <nav class="main-nav">
-        <ul>
-          <li> <a class="button-nav active" href="home.html">Projects</a></li>
-          <li><a class="button-nav" href="about.html">About</a></li>
-          <li><a class="button-nav" target="_blank" href="http://www.sarahtong.me/Portfolio%20Links/Resume-BandW-SarahTong.pdf">Resume</a></li>
-          <li class="back-desktop"><a class="button-nav" href="index.html">back to projects</a></li>
-        </ul>
-      </nav>
+
+        <nav id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="home.html"><img src="img/nav/logo.png" alt="portfolio logo" class="logo_img"></a>
+
+          <a href="home.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <a href="home.html"><img src="img/nav/logo.png" alt="portfolio logo" class="logo_img"></a>
     </div>
     <div class="page-wrapper">
-      <!-- <section class="introduction"> -->
-        <section class="overview">
+        <section class="introduction">
 
         <div class="content-wrapper">
           <h1>Tripping Friends</h1>
@@ -44,7 +40,7 @@
         </div>
       </section>
       <section class="overview">
-        <div class="content-wrapper flex-content-wrapper">
+        <div class="content-wrapper">
           <div class="left-side">
             <h2>Overview</h2>
             <p>
@@ -72,7 +68,7 @@
           <h2>Process</h2>
           <div class="subsection">
             <h3>Art Direction</h3>
-            <div class="img-wrapper"><img src="img/VIA/birdy.jpg" alt="process image for main character Birdy"></div>
+            <div class="img-wrapper"><img src="img/VIA/birdy.jpg" alt="Birdy Sketch"></div>
             <p>
               The art direction of this project is inspired by the animated video series of violent adventure and narrative - Happy Tree Friends. The series includes cute woodland creatures that go through a happy adventure which turns into extreme graphic violence that causes injuries and deaths.
             </p>

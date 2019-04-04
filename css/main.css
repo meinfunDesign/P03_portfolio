@@ -77,94 +77,19 @@ INTERACTIVE ELEMENTS -------------------
   font-weight: 800;
   border-bottom: 2px dashed #2a2a90; }
 
-/* Styling for the navigation button */
-nav ul {
-  padding: 0; }
 
-nav li {
-  list-style: none;
-  margin: 0;
-}
-nav li a {
-  display: block;
-  text-decoration: none;
-  text-align: left;
-
-
-}
-
-.button-nav {
-  position: relative;
-  letter-spacing: 0.0625rem;
-  /* text-align: center; */
-  text-decoration: none;
-  font-size: 1.05rem;
-  color: #2a2a90;
-  -webkit-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
-  transition: background-color 0.5s;
-  text-transform: uppercase;
-
- }
-  .button-nav:hover {
-    font-weight: 800;
-  }
-    .button-nav:hover:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      left: 0;
-      bottom: -0.25rem;
-      border-bottom: 2px dashed #2a2a90;
-    }
-  .button-nav.active {
-    color:red;
-    background-color: pink;
-}
-
-
-/* Styling for main navigation */
-.main-nav {
-  position: relative;
-  padding-top: 4rem; }
-
-.main-nav ul {
-  position: relative;
-  margin-top: 2.7rem; }
-
-.main-nav li {
-  padding: 0 2.25rem 1.85rem 4rem; }
 
 .nav-wrapper {
-  min-width: 19.375rem;
+  flex:1;
+  /* width:40vh;
   min-height: 100vh;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  letter-spacing: 1px; }
-  .nav-wrapper.open {
-    margin-left: 0; }
-  .nav-wrapper.close {
-    margin-left: -16.6875rem; }
-  .nav-wrapper.toggle {
-    margin-left: -16.6875rem; }
-
-
-/* logo image illustration */
-.logo_img{
-  width:100px;
-  height:auto;
+  letter-spacing: 1px; */
 }
 
-/* clear interaction of logo on the top */
-.logo_img:hover {
-  /* the scale will change when the mouse is hovered on the logo */
-  width: 120px;
-  display: block;
-  margin: auto;
-  /* make the transition smooth */
-  transition: all ease-in-out .2s;
-}
+
 
 /* bio in nav */
 .short-bio {
@@ -246,14 +171,14 @@ TEXT ELEMENTS -------------------
 */
 /* Styling for heading levels */
 h1 {
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   color: #2a2a90;
   text-transform: uppercase;
   font-weight: 800;
   margin: 0; }
 
 h2 {
-  font-size: 2.0rem;
+  font-size: 1.5rem;
   color: black;
   text-transform: uppercase;
   font-weight: 800;
@@ -266,7 +191,7 @@ h3 {
   font-style: italic; }
 
 h4 {
-  font-size: 0.975rem;
+  font-size: 0.875rem;
   margin-bottom: 0; }
 
 
@@ -288,7 +213,7 @@ COMBINED ELEMENTS -------------------
 /* Styling for product listing */
 #makeMeScrollable {
   position: relative;
-  width: 100%;
+  flex:3;
   height: 100vh;
   overflow: hidden; }
 
@@ -588,38 +513,39 @@ COMBINED ELEMENTS -------------------
   margin: 0 0 6rem; }
 
 .content-wrapper {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 66.666667%;
-  flex: 0 0 66.666667%;
-  max-width: 66.666667%;
+  max-width: 90%;
 }
 
 .content-wrapper .subsection:first-of-type {
   margin-top: 1.75rem;
 }
 
-.flex-content-wrapper {
+/* .flex-content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+} */
+/* div class for flex */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+/* div class for flex-half (rendered element and css selector + sample code) */
+.right-side,.left-side {
+flex: 0 0 45%;
+margin-right: 5%;
 }
 
-
-.right-side {
-  width: 40%;
+.page-wrapper{
+flex:5;
+margin-right: 10%;
 }
-
-.left-side {
-  padding-right: 4rem;
-  width: 60%;
-
-}
-
 .project-wrapper h4 {
   margin-top: 1.75rem; }
 
 .page-wrapper section, #bio-wrapper section {
-  margin-top: 9rem; }
+  margin-top: 2rem; }
   .page-wrapper section p, #bio-wrapper section p {
     margin-top: 1rem; }
 
@@ -724,16 +650,6 @@ footer a {
     bottom: -0.15rem;
     border-bottom: 2px dashed #2a2a90; }
 
-/* VIA styling */
-#VIA-business-problem-img,
-#VIA-customer-segment-img {
-  padding: 5rem 1rem; }
-
-#VIA-solution .sub-subsection:first-of-type {
-  margin-top: 0; }
-
-#VIA-solution .img-wrapper:first-of-type {
-  margin-top: 1.75rem; }
 
 /* Bio styling */
 #bio-wrapper p span {
@@ -897,19 +813,16 @@ footer a {
   #profile-picture {
     margin-bottom: 4rem; } }
 
-@media (max-width: 768px) {
-  .nav-wrapper {
-    margin-left: -16.6875rem;
-   }
-    .nav-wrapper.toggle {
-      margin-left: 0;
-    }
-
+@media (max-width: 888px) {
+  .flex{
+    flex-direction: column;
+  }
      }
 
 @media (max-width: 475px) {
   .content-wrapper {
-    padding-right: 2rem; } }
+    padding-right: 2rem; }
+  }
 
 @media (hover: none), (hover: on-demand) {
   #SMA-panel .background-colo#2a2a90-panel,
@@ -924,4 +837,5 @@ footer a {
   .project-panel-wrapper .blue-img-filter {
     background: black; }
   .back-desktop {
-    display: none; } }
+    display: none; }
+  }
