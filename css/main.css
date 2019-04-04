@@ -30,7 +30,7 @@ section h3 {
 section a,
 section p {
   margin-top: 0;
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   font-family: 'Roboto', sans-serif;
 
 }
@@ -188,11 +188,15 @@ h3 {
   font-size: 1.15rem;
   color: black;
   font-weight: 100;
-  font-style: italic; }
+  font-style: italic;
+
+}
 
 h4 {
   font-size: 0.875rem;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  text-decoration:underline;
+}
 
 
 /* Styling for bulleted lists */
@@ -554,18 +558,6 @@ margin-right: 10%;
   font-weight: 800;
   margin: 1rem 0; }
 
-.overview .left-side {
-  width: 70%; }
-
-.overview .right-side {
-  width: 30%; }
-
-.overview .content-wrapper {
-  padding-bottom: 5rem;
-  border-bottom: 2px dashed #aaa; }
-
-.overview .right-side p {
-  margin: 0 0 1.5rem; }
 
 .sub-subsection,
 .subsection {
@@ -795,19 +787,9 @@ footer a {
   .flex-content-wrapper,
   .flex-img-wrapper,
   .left-side,
-  .overview .left-side,
-  .overview .right-side,
   .right-side {
     display: block;
     width: 100%; }
-  .overview .left-side {
-    margin-bottom: 4rem; }
-  .overview .right-side {
-    padding-bottom: 5rem;
-    border-bottom: 2px dashed #aaa; }
-  .overview .content-wrapper {
-    padding-bottom: 0;
-    border-bottom: none; }
   .left-side {
     padding-right: 0; }
   #profile-picture {
