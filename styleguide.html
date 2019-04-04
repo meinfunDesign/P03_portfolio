@@ -1,61 +1,59 @@
-<!-- structure of styleguide -->
-<!-- homepage -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>Hello!Sherry Liao</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sherry Liao - Character Designer - Portfolio</title>
+  <link rel="icon" href="img/nav/logo.png">
 
-  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/project_panel_img.css">
 
-  <!-- Required css for all pages -->
-  <link rel="stylesheet" href="css/defaultCss/normalize.css">
-  <link rel="stylesheet" href="css/defaultCss/main.css">
-  <link rel="stylesheet" href="css/defaultCss/nav.css">
-  <link rel="stylesheet" href="css/defaultCss/footer.css">
-  <!-- style of homepage -->
+
   <link rel="stylesheet" href="css/styleguide.css">
-  <link rel="stylesheet" href="css/home.css">
 
 
 </head>
-
 <body>
+
   <!-- navigation bar for switching between different pages, i.e. styleguide, product listing pages -->
   <header>
-    <!-- <a href="home.html"><img src="img/logo.png" alt="portfolio logo" class="logo_img"></a> -->
   </header>
 
-  <nav class="navContainer">
+  <div class="nav-wrapper">
+    <nav id="mySidenav" class="sidenav">
+      <a href="home.html"><img src="img/nav/logo.png" alt="portfolio logo" class="logo_img"></a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="styleguide.html">Styleguide</a>
+      <a href="citations.html">Citations</a>
+      <a href="https://github.com/meinfunDesign/P03_portfolio">github</a>
+      <a href="home.html">Portfolio</a>
 
-    <nav class="nav-flex-box nav-bar">
-      <a class="button-nav" href="home.html">Work</a>
-      <a class="button-nav" href="about.html">About</a>
-      <a class="button-nav" href="styleguide.html">Style</a>
     </nav>
-
-  </nav>
-
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <a href="home.html"><img src="img/nav/logo.png" alt="portfolio logo" class="logo_img"></a>
+  </div>
   <!-- end of nav -->
   <main>
     <section id="interactive-elements">
-      <h1 class="section-header">Interactive Elements</h1>
-
+      <h1>Styleguide</h1>
       <section id="navigation-button">
         <h2 class="header-stylize">NAVIGATION BUTTON</h2>
         <div class="flex">
           <div class="flex-half">
             <h3 class="header-three">Rendered Element:</h3>
-            <button type="button" class="button button-nav">Nav Button</button>
+            <nav class="navigation">
+            <a href="home.html">Portfolio</a>
+          </nav>
           </div>
           <div class="flex-half">
             <h3 class="header-three">CSS Selector:</h3>
-            <p>.button-nav</p>
+            <p>.sidenav</p>
             <h3 class="header-three">Sample Code:</h3>
-            <code>&lt;button href="#" class="button button-nav"&gt;Nav Button&lt;/a&gt;</code>
+            <code>&lt;button href="#" class="sidenav"&gt;Nav Button&lt;/a&gt;</code>
           </div>
         </div>
       </section>
@@ -65,58 +63,21 @@
         <div class="flex">
           <div class="flex-half">
             <h3 class="header-three">Rendered Element:</h3>
-            <p>This is a paragraph with <a href="#" class="link-text">a link</a> inside it.</p>
+            <p>This is a paragraph with <a href="#" class="in-text-link">a link</a> inside it.</p>
           </div>
           <div class="flex-half">
             <h3 class="header-three">CSS Selector:</h3>
-            <p>.link-text</p>
+            <p>.in-text-link</p>
             <h3 class="header-three">Sample Code:</h3>
-            <code>&lt;p&gt;This is a paragraph with &lt;a href="#" class="link-text"&gt;a link!&lt;/a&gt; inside it.&lt;/p&gt;</code>
+            <code>&lt;p&gt;This is a paragraph with &lt;a href="#" class="in-text-link"&gt;a link!&lt;/a&gt; inside it.&lt;/p&gt;</code>
           </div>
         </div>
       </section>
 
-      <section id="form-buttons">
-        <h2 class="header-stylize">FORM SUBMIT & RESET BUTTONS</h2>
-        <div class="flex">
-          <div class="flex-half">
-            <h3 class="header-three">Rendered Element:</h3>
-            <input type="submit" class="button-form-submit">
-            <input type="reset" class="button-form-reset">
-          </div>
-          <div class="flex-half">
-            <h3 class="header-three">CSS Selector:</h3>
-            <p>.button-form-submit & .button-form-reset</p>
-            <h3 class="header-three">Sample Code:</h3>
-            <code>&lt;input type="submit" class="button-form-submit"&gt;&lt;input type="submit" class="button-form-reset"&gt;</code>
-          </div>
-        </div>
-      </section>
-
-      <section id="input-field">
-        <h2 class="header-stylize">INPUT FIELDS WITH LABEL</h2>
-        <div class="flex">
-          <div class="flex-half">
-            <h3 class="header-three">Rendered Element:</h3>
-            <form class="form-textfield">
-              <label>Message:</label>
-              <textarea placeholder="type in here"></textarea>
-            </form>
-          </div>
-          <div class="flex-half">
-            <h3 class="header-three">CSS Selector:</h3>
-            <p>.form-textfield &gt; label</p>
-            <h3 class="header-three">Sample Code:</h3>
-            <code>&lt;form class="form-textfield"&gt;&lt;label&gt;Form Label:&lt;/label&gt;&lt;textarea&gt;&lt;textarea&gt;&lt;/form&gt;</code>
-          </div>
-        </div>
-      </section>
     </section>
     <!-- end of interactive-elements-->
 
     <section id="text-style">
-      <!-- Text Styling section -->
-      <h1 class="section-header">Text Styles</h1>
       <section id="heading-levels">
         <h2 class="header-stylize">HEADING LEVELS</h2>
         <div class="flex">
@@ -125,10 +86,12 @@
             <h1 class="header-one">This is an example of an H1 level header</h1>
             <h2 class="header-two">This is an example of an H2 level header</h2>
             <h3 class="header-three">This is an example of an H3 level header</h3>
+            <h3 class="header-four">This is an example of an H3 level header</h3>
+
           </div>
           <div class="flex-half">
             <h3 class="header-three">CSS Selector:</h3>
-            <p>.header-one, .header-two, .header-three</p>
+            <p>.h1,.h2,.h3,.h4</p>
             <h3 class="header-three">Sample Code:</h3>
             <code>&lt;h1 class="header-one"&gt;This is an example of an H1 header&lt;/h1&gt;</code>
           </div>
@@ -171,114 +134,30 @@
             </div>
           </div>
         </section>
-
-        <section id="numbered-list">
-          <h2 class="header-stylize">NUMBERED LIST</h2>
-          <div class="flex">
-            <div class="flex-half">
-              <h3 class="header-three">Rendered Element:</h3>
-              <ol class="list-numbered">
-                <li>Two, Three, Four.</li>
-                <li>Tell me that you love me more.</li>
-                <li>Sleepless long nights</li>
-                <li>That is what my youth is for</li>
-              </ol>
-            </div>
-            <div class="flex-half">
-              <h3 class="header-three">CSS Selector:</h3>
-              <p>.list-numbered</p>
-              <h3 class="header-three">Sample Code:</h3>
-              <code>&lt;ol class="list-numbered"&gt;&lt;li&gt;This is a list item inside an unordered list.&lt;/li&gt;&lt;/ol&gt;</code>
-            </div>
-          </div>
-        </section>
       </section>
       <!-- end of text-style-->
 
-      <section id="analysis">
-        <h2 class="header-stylize">Project analysis- moodboard experimental video<</h2>
-        <div class="flex">
-          <div class="flex-half">
-            <p>Role: Ideation, storyboarding, location scheduling, video editing, special effects, music remixing<p>
-              <p>Tools:
-                ​
-                After Effects 2017, Adobe Illustrator 2017, Canon T3i DSLRs, video sliver tripod (Manfrotto 128)
-                ​
-                Location
-                ​
-                Green room at Simon Fraser University Surrey Campus</p>
-                <p>Description:
-                  ​
-                  Haziness is a visual effect video that includes a sense of "a spirit of haziness". Since I always have a hazy notion towards things when I am lack of sleep and stress during the final week of the semester. I want to share this experience and transform my mind activity into visible moving imagery.
-                  ​
-                  The video focuses on the character movements, such as jumping, dancing and waving hands in the air to represent the emotion of having a hazy mind. The technique of using funky, high saturated, and symmetry styles (Kaleida effect in After effect) through the whole video, instead of a smoky environment, makes the video unique and creative.
-                </p>
-              </div>
-              <div class="flex-half">
-                <img src="img/moodboard.png"  alt="portfolio moodboard" class="moodboard_img">
-              </div>
-            </div>
-          </section>
-          <section id="analysis">
-            <h2 class="header-stylize">Project analysis- process of experimental video</h2>
-            <div class="flex">
-              <p>
-                Process Analysis of Final Video:
 
-                Glitch effect -> Spilt effect -> Transition to blue background -> Kaleida effects
-                ​
-                For the jumping movement,  I had zoom in the shots to focus on the legs and use the scale tool to mirror the character(me). Then, for the kaleida effects, I applied the flower, Can Maes, Wheel, Flippers, Unfold, and Dia cross effect with some a few rotations in order to establish the hazy mood. </p>
-                <img src="img/process.png"  alt="portfolio process" class="process_img">
-              </div>
-            </section>
-            <section id="analysis">
-              <h2 class="header-stylize">Project analysis- VR glasses</h2>
-              <div class="flex">
-                <div class="flex-half">
-                  <p>Role: Ideation, poster design<p>
-                    <p>VR HEADSET DESIGN
-                      A VR headset made of wood and metal, designed to deliver a better experience of viewing the showroom at home.</p>
-                      <ul>
-                        <li>  Summary of Horizon VR glasses</li>
-                        <li>Persona</li>
-                        <li>Context</li>
-                        <li>Interaction</li>
-                        <li>Materiality</li>
-                        <li>3D model render</li>
-                        <li>Final physical model</li>
-                        <li>Product views</li>
-                        <li>Product dimensions</li>
-                        <li>Fabrication</li>
-                        <li>Technology</li>
-                        <li>Form and process</li>
-                      </ul>
-                      <p>We had a final showcase starting from 11:00 at SFU surrey campus. The experience was pretty cool. We took turn to explain our design idea to the audiences. People were surprising about how light our model is due to it was mainly made by wood and metal.   </p>
-                    </div>
-                    <div class="flex-half">
-                      <img src="img/cork.png"  alt="portfolio corkposter" class="moodboard_img">
-                    </div>
-                  </div>
 
-                  <div class="flex">
-                    <div class="flex-half">
-                      <img src="img/sketch.png"  alt="portfolio sketch" class="half_img">
-                    </div>
+  </main>
+  <footer class="main-footer">
+    <p> Sherry Liao (2019)</p>
+    <a class="link-text" href="citations.html">Citations</a>
 
-                    <div class="flex-half">
-                      <img src="img/poster.png"  alt="portfolio poster" class="half_img">
-                    </div>
-                  </div>
+    <a class="link-text" href="https://github.com/meinfunDesign/P03_portfolio">github</a>
 
-                </section>
+  </footer>
+  <!-- hamburger menu -->
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
 
-              </section>
-            </main>
-            <footer class="main-footer">
-              <p> Sherry Liao (2019)</p>
-              <a class="link-text" href="citations.html">Citations</a>
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+  <!-- end of hamburger menu -->
+</body>
 
-              <a class="link-text" href="https://github.com/meinfunDesign/P03_portfolio">github</a>
-
-          </footer>
-          </body>
-          </html>
+</html>

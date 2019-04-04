@@ -1,0 +1,32 @@
+
+/* footer */
+footer {
+  margin: 6rem 0 5rem; }
+
+footer a,
+footer p {
+  position: relative;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.7rem;
+  margin: 0 auto;
+  text-decoration: none; }
+
+footer p {
+  top: 0.95rem; }
+
+footer a {
+  color: #2a2a90;
+  top: 1.75rem; }
+  footer a:hover {
+    font-weight: 800; }
+  footer a:hover:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -0.15rem;
+    border-bottom: 2px dashed #2a2a90; }
+/* end of footer */

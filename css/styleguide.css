@@ -1,40 +1,51 @@
 /* <!-- Project three: Portfolio_styleguide | Fan-Hsuan(Sherry) Liao--> */
 
-* {
-  box-sizing: border-box;
-}
-/* body grid by using margin */
-body {
-  font-family: "Office Code Pro", monospace;
-  /* white space between two sides */
-  margin-left: 15%;
-  margin-right: 15%;
 
-  font-weight: lighter;
+.navigation {
+  width: 10rem;
+  height: auto;
+
+  position: relative;
+  z-index: 1;
+  background-color: pink;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align:center;
 }
 
+.navigation a {
+  padding: 8px 8px 8px 12px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  padding-right: 1.5rem;
+}
+
+.navigation a:hover{
+  color: red;
+  padding-left: 38px;
+text-decoration: underline;
+}
+
+
+main{
+  margin-left:10%;
+  margin-right:10%;
+}
 /* stylying for sample code */
 code {
-  /* highlight the code with background color */
-  /* highligh green  */
   background-color: white;
   padding: 0.25em 0.5em;
   line-height: 1.7em;
   font-size: 1.1em;
-  color:pink;
-
+  color:lightpink;
 }
 a{
   min-width:110px;
   height:auto;
   max-width: 100%;
-}
-/* paragraph */
-p {
-  font-family: "Office Code Pro", monospace;
-  font-weight: normal;
-  font-size: 0.9em;
-  color:darkgrey;
 }
 
 section {
@@ -89,26 +100,7 @@ nav li {
   border-bottom: 2px dashed pink;
 }
 
-/* interactive_elements */
-/* default text input + label */
-.text_input,.button-radio{
-  transition:border 0.8s;
-  /* dark green */
-  border-color: pink;
-  font-family: "Office Code Pro", monospace;
-  margin-top: 1em;
-}
 
-/* Clear interaction point response for text input when it is hovered or focused */
-.text_input:hover,.button-radio:hover{
-  /* light green  */
-  border: 3px solid pink;
-}
-.text_input:focus,.button-radio:focus{
-  /* light grey  */
-  background-color: pink;
-  border: 3px solid pink;
-}
 
 
 /* submit, reset, purchase buttons (add to chart)*/
@@ -200,25 +192,18 @@ FORM SUBMIT & RESET BUTTONS
 INPUT FIELDS WITH LABEL
 HEADING LEVELS
 PARAGRAPH STYLE
-NUMBERED LIST
 PRIMARY NAVIGATION
 TASKS
 FONTS
 ART DIRECTION
 SITE COLOUR PALETTE
 */
-.header-stylize {
-  font-family: Helvetica;
-  /* dark green */
-  color: pink;
-  font-size: 1.6em;
-  font-weight: 600;
-}
+
 
 /* hashtag id to make a line between each small flexbox */
 #navigation_button,#form_buttons,
 #input_field,#radio_buttons,#images_as_a_link,
-#paragraph,#numbered_list,#company,
+#paragraph,
 #target_personas,#product_task,#font_choices,
 #art_direction,#colour_palette{
   padding-top:1em;
@@ -239,33 +224,38 @@ SITE COLOUR PALETTE
 
 
 /* Four types of headings */
-.header-one {
-  font-size: 2.4em;
+
+TEXT ELEMENTS -------------------
+*/
+/* Styling for heading levels */
+h1,.header-one {
+  font-size: 2.3rem;
+  color: #2a2a90;
+  text-transform: uppercase;
   font-weight: 800;
-  color: pink;
-}
+  margin: 0; }
 
-.header-two {
-  color: grey;
-  font-size:1.9em;
-  font-weight:700;
+h2,.header-stylize,.header-two {
+
+  font-size: 1.5rem;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: left; }
+
+h3, .header-four {
+  font-size: 1.15rem;
+  color: black;
+  font-weight: 100;
   font-style: italic;
-  text-decoration: underline;
+
 }
 
-/* h3- heading of Rendered element + CSS Selector + Sample Code  */
-/* and also one of the four levels of headings */
-.header-three {
-  font-family: Helvetica;
-  font-size: 1.15em;
-  font-weight: 700;
+h4, .header-four {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  text-decoration:underline;
 }
-.header-four {
-  font-family: Helvetica;
-  font-size: 0.95em;
-  font-weight: 700;
-}
-
 /* End of Four types of heading */
 
 .header-product {
@@ -284,34 +274,6 @@ SITE COLOUR PALETTE
 }
 
 
-/* link */
-.link-text {
-  /* dark green */
-  color:red;
-  /* double lines */
-  text-decoration-style:double;
-}
-/* Clear interaction response for link */
-.link-text:hover, .link-text:active, .link-text::after {
-  /* dark green */
-  color:#0e8044;
-  /* background-color: pink; */
-  padding-top:0.3rem;
-  text-decoration-style:double;
-}
-/* Numbered lists */
-.list-numbered li,.bulleted_list li {
-  padding-bottom: 0.5em;
-  font-size: 0.87em;
-}
-/* Clear interaction response for numbered list */
-.list-numbered li:hover, .bulleted_list li:hover {
-  cursor: crosshair;
-  /* highlight green */
-  background-color: pink;
-
-}
-
 .product-image-flex-item {
   flex: 2 1 400px;
 }
@@ -329,24 +291,6 @@ SITE COLOUR PALETTE
   height: auto;
   width: 100%;
 }
-.moodboard_img{
-  width:auto;
-  min-width: 200px;
-  max-height:440px;
-
-}
-.half_img{
-  width:80%;
-  min-width: 200px;
-  max-height:440px;
-}
-.process_img{
-  width:auto;
-  min-width: 200px;
-height:auto;
-  max-height:300px;
-}
-
 #product_listing,#checkout_form{
   margin-top: 3em;
   padding-top: 1em;
@@ -400,16 +344,9 @@ span.price {
 
 /* company paragraph */
 .paragraph-text{
-  font-family: "Office Code Pro", monospace;
-  font-size: 0.87em;
-  letter-spacing: .02em;
-  line-height: 1.75;
-  font-weight: lighter;
-  background-color: #f4ff81;
-  margin-top:1em;
-  border:0;
-  background-color: white;
-  margin-bottom:0.5em;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-family: 'Roboto', sans-serif;
 }
 /* images resize for images_as_a_link, FONTS */
 #images_as_a_link img, #font_choices img,#art_direction img{
@@ -467,3 +404,41 @@ span.price {
   height:auto;
   max-width: 100%;
 }
+.project-panel-wrapper .overlay {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height:auto;
+  /* before hover */
+  background-color: #fcd2f3;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  mix-blend-mode: multiply;
+}
+.project-panel-wrapper:hover .overlay {
+  opacity: 0;
+}
+.project-panel-wrapper .pink-img-filter {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  opacity: 0.5;
+  mix-blend-mode: lighten;
+  -webkit-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+.project-panel-wrapper:hover .pink-img-filter {
+  background: black;
+ }
+.project-panel-wrapper, .img_effect{
+   height:200px;
+   width:auto;
+ }
+ .main-footer{
+   text-align: center;
+ }
