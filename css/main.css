@@ -140,19 +140,12 @@ COMBINED ELEMENTS -------------------
 #makeMeScrollable {
   position: relative;
   flex:3;
-  height: 100vh;
+  /* height: 100vh; */
   overflow: hidden; }
 
 #makeMeScrollable div.scrollableArea {
   float: left;
  }
-
-.project-panel-wrapper {
-  width: 29rem;
-  min-height: 100vh;
-  letter-spacing: 1px;
-  position: relative;
-  overflow: hidden; }
 
 .project-panel-wrapper a {
   display: block;
@@ -294,7 +287,48 @@ COMBINED ELEMENTS -------------------
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+}
+
+@media screen and (min-width: 701px) {
+  .grid-wrapper-main {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .project-panel-wrapper {
+    width: 29rem;
+    height: 100vh;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .grid-wrapper-main {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .project-panel-wrapper {
+    width: 29rem;
+    height: 100vh;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+  }
+}
 
 
 /* Project page styling */
