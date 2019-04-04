@@ -1,36 +1,27 @@
 
 /* footer */
 footer {
-  margin: 6rem 0 5rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-right:10%;
+
 }
 
-footer a,
+footer .in-text-link,
 footer p {
   position: relative;
-  display: block;
+  display: inline-block;
   width: fit-content;
   font-size: 0.7rem;
   margin: 0 auto;
   text-decoration: none;
+  padding:0;
 }
 
 footer p {
-  top: 0.95rem;
+  padding:0;
 }
 
-footer a {
-  color: #2a2a90;
-  top: 1.75rem;
-}
-footer a:hover {
-  font-weight: 800;
-}
-footer a:hover:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: -0.15rem;
-  border-bottom: 2px dashed #2a2a90;
-}
+
 /* end of footer */

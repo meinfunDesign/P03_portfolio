@@ -218,15 +218,18 @@ SITE COLOUR PALETTE
 
 /* div class for flex-half (rendered element and css selector + sample code) */
 .flex-half {
-  flex: 0 0 45%;
+  flex:1;
   margin-right: 5%;
 }
-
+.selfie{
+  width:200px;
+  height:200px;
+float:left;
+}
 
 /* Four types of headings */
 
-TEXT ELEMENTS -------------------
-*/
+
 /* Styling for heading levels */
 h1,.header-one {
   font-size: 2.3rem;
@@ -242,6 +245,10 @@ h2,.header-stylize,.header-two {
   text-transform: uppercase;
   font-weight: 800;
   text-align: left; }
+
+  .header-two{
+    color:pink;
+  }
 
 h3, .header-four {
   font-size: 1.15rem;
