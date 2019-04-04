@@ -7,7 +7,6 @@ Default styling for the style guide
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
@@ -55,22 +54,18 @@ INTERACTIVE ELEMENTS -------------------
   font-size: 0.875rem;
   text-decoration: none;
   color: #2a2a90;
-  -webkit-transition: color 0.5s;
-  -o-transition: color 0.5s;
   transition: color 0.5s; }
   .in-text-link:after {
     position: absolute;
     z-index: -1;
     bottom: -5px;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
+
     transform: translateX(-50%);
     content: '';
     width: 100%;
     height: 2px;
-    -webkit-transition: all 250ms;
-    -o-transition: all 250ms;
+
     transition: all 250ms;
     content: "";
     background-color: white; }
@@ -135,7 +130,7 @@ ol,
 ul {
   font-size: 0.875rem;
   list-style: square;
-  -webkit-padding-start: 1.25rem; }
+  }
 
 /*
 COMBINED ELEMENTS -------------------
@@ -168,8 +163,6 @@ COMBINED ELEMENTS -------------------
 
 .project-detail {
   color: white;
-  -webkit-transition: color 0.5s, border 0.5s;
-  -o-transition: color 0.5s, border 0.5s;
   transition: color 0.5s, border 0.5s; }
 
 .project-label-background {
@@ -177,12 +170,8 @@ COMBINED ELEMENTS -------------------
   left: 2.5rem;
   top: 0;
   height: 2.5rem;
-  -webkit-transform-origin: top left;
-  -ms-transform-origin: top left;
   transform-origin: top left;
   background: pink;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
   #tripping_friend_panel .project-label-background {
@@ -212,12 +201,10 @@ COMBINED ELEMENTS -------------------
   font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
-  -webkit-transform-origin: top left;
   -ms-transform-origin: top left;
   transform-origin: top left;
   top: 7rem;
   left: 1.85rem;
-  -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(90deg);
 }
@@ -226,11 +213,9 @@ COMBINED ELEMENTS -------------------
   position: absolute;
   width: 1.5rem;
   border-top: 2px dashed #2a2a90;
-  -webkit-transform-origin: top left;
   -ms-transform-origin: top left;
   transform-origin: top left;
   left: 1.25rem;
-  -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
@@ -248,11 +233,9 @@ COMBINED ELEMENTS -------------------
   font-size: 0.875rem;
   font-weight: 200;
   text-transform: uppercase;
-  -webkit-transform-origin: top left;
   -ms-transform-origin: top left;
   transform-origin: top left;
   left: 1.85rem;
-  -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(90deg); }
   #tripping_friend_panel .category {
@@ -261,7 +244,7 @@ COMBINED ELEMENTS -------------------
     top: 22rem; }
   #comming-panel .category {
     top: 18rem; }
-  }
+
 
 
 .project-panel-wrapper {
@@ -276,8 +259,6 @@ COMBINED ELEMENTS -------------------
 
     background-color: #fcd2f3;
     opacity: 0.5;
-    -webkit-transition: opacity 0.5s;
-    -o-transition: opacity 0.5s;
     transition: opacity 0.5s;
     mix-blend-mode: multiply;
   }
@@ -292,7 +273,6 @@ COMBINED ELEMENTS -------------------
     background-color: white;
     opacity: 0.5;
     mix-blend-mode: lighten;
-    -webkit-transition: all ease-in-out 0.5s;
     -o-transition: all ease-in-out 0.5s;
     transition: all ease-in-out 0.5s;
   }
@@ -436,10 +416,9 @@ display: block;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    -ms-flex-prefer#2a2a90-size: 0;
+
     flex-basis: 0; }
   #comming-panel img {
-    -webkit-transform: translate(-8%, 0%);
     -ms-transform: translate(-8%, 0%);
     transform: translate(-8%, 0%); }
    }
@@ -492,12 +471,11 @@ display: block;
   }
 
 @media (hover: none), (hover: on-demand) {
-  #SMA-panel,
-  #SMA-panel img,
+  
   #tripping_friend_panel img,
   #wndw_doc_panel img,
   #comming-panel img {
-    -webkit-filter: none;
+
     filter: none; }
   .project-panel-wrapper .overlay {
     opacity: 0; }
