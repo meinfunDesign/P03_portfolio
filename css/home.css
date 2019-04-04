@@ -4,54 +4,7 @@ body{
   height:100vh;width:auto;
 
 }
-/* logo */
-.logo {
-  position: relative;
-  display: block;
-  top: 2.8rem;
-  left: 4rem;
-  width:3rem;
-  height: 3rem;
-  margin: 0;
-  z-index: 10;
-}
-.logo a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 3rem;
-  height: 3rem;
-  margin: 0;
-  font-size:1.4rem;
-  font-weight: 800;
-  text-decoration: none;
-  background: pink;
-  color: white;
-}
-.logo :before {
-  content: '';
-  position: absolute;
-  border: pink dashed 2px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.logo :hover:before {
-  top: -4px;
-  right: -4px;
-  bottom: -4px;
-  left: -4px;
-}
+
 
 /* Styling for text input field */
 .input-field-label {
